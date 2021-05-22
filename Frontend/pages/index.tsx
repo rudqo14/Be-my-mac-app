@@ -4,7 +4,7 @@ import AppLayout from "../components/appLayout";
 const Home = () => {
   return (
     <AppLayout>
-      <div>Hello, Next</div>
+      <div className="chat-notification">test</div>
     </AppLayout>
   );
 };

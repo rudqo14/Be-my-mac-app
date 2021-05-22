@@ -1,12 +1,13 @@
 import React from "react";
 import Link from "next/link";
+import "tailwindcss/tailwind.css";
 
 const AppLayout = ({ children }: AppLayout) => {
   return (
     <div>
       <div>
         <Link href="/">
-          <a>노드버드</a>
+          <a>Home</a>
         </Link>
         <Link href="/profile">
           <a>프로필</a>

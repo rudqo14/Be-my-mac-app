@@ -2,22 +2,25 @@ import React from "react";
 import Link from "next/link";
 import "tailwindcss/tailwind.css";
 
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+
 const AppLayout = ({ children }: AppLayout) => {
   return (
-    <div>
-      <div>
+    <nav>
+      <div className="flex space-x-2">
         <Link href="/">
-          <a>Home</a>
+          <a className="block px-4 py-2 rounded-md">Home</a>
         </Link>
         <Link href="/profile">
-          <a>프로필</a>
+          <a className="block px-4 py-2 rounded-md">프로필</a>
         </Link>
         <Link href="/signup">
-          <a>회원가입</a>
+          <a className="block px-4 py-2 rounded-md">회원가입</a>
         </Link>
       </div>
       {children}
-    </div>
+    </nav>
   );
 };
 
